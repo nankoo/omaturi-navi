@@ -73,22 +73,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.90752377719999999" green="0.89467888630000003" blue="0.89538976660000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ci2-eb-XMZ">
-                                    <size key="itemSize" width="153" height="136"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="2" id="Ci2-eb-XMZ">
+                                    <size key="itemSize" width="154" height="138"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="2" minY="5" maxX="2" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="1" minY="5" maxX="1" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="rWX-7j-OUI" customClass="CollectionViewCell">
-                                        <rect key="frame" x="2" y="69" width="153" height="136"/>
+                                        <rect key="frame" x="1" y="69" width="154" height="138"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="153" height="136"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="154" height="138"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="a9o-Pu-9td">
-                                                    <rect key="frame" x="0.0" y="0.0" width="153" height="136"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="154" height="138"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                 </imageView>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fka-db-cZu">
@@ -156,21 +156,6 @@
                                     <action selector="hereTap:" destination="HCK-BL-BdX" eventType="touchUpInside" id="m9B-KG-1oc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJW-Ue-oJ1">
-                                <rect key="frame" x="73" y="459" width="35" height="24"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="PE4-2T-7af"/>
-                                    <constraint firstAttribute="height" constant="23" id="UQi-vx-fJl"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="sweden1.jpg">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="swedenTap:" destination="HCK-BL-BdX" eventType="touchUpInside" id="2PV-BO-crd"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km4-PW-JBQ">
                                 <rect key="frame" x="49" y="151" width="223" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -192,14 +177,10 @@
                             <constraint firstAttribute="trailing" secondItem="gWx-Cw-ycI" secondAttribute="trailing" id="4w7-4J-Rqc"/>
                             <constraint firstItem="gWx-Cw-ycI" firstAttribute="top" secondItem="tCa-YI-m4f" secondAttribute="top" id="5Pm-oR-xn6"/>
                             <constraint firstAttribute="bottom" secondItem="gWx-Cw-ycI" secondAttribute="bottom" id="7Is-kF-A54"/>
-                            <constraint firstItem="KJW-Ue-oJ1" firstAttribute="leading" secondItem="xHl-Nn-rrf" secondAttribute="trailing" constant="18" id="SWL-sD-UVf"/>
                             <constraint firstAttribute="bottom" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="79" id="XuG-hX-LbC"/>
-                            <constraint firstItem="KJW-Ue-oJ1" firstAttribute="leading" secondItem="tCa-YI-m4f" secondAttribute="leading" constant="73" id="ZTZ-6d-xVX"/>
                             <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="29" id="abw-UI-Cm9"/>
-                            <constraint firstAttribute="bottom" secondItem="KJW-Ue-oJ1" secondAttribute="bottom" constant="85" id="fqw-je-940"/>
                             <constraint firstItem="xHl-Nn-rrf" firstAttribute="leading" secondItem="tCa-YI-m4f" secondAttribute="leading" constant="15" id="hzX-qx-i2Q"/>
                             <constraint firstItem="gWx-Cw-ycI" firstAttribute="leading" secondItem="tCa-YI-m4f" secondAttribute="leading" id="vIc-Dm-gE3"/>
-                            <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="KJW-Ue-oJ1" secondAttribute="bottom" constant="37" id="wf7-Fb-ApQ"/>
                             <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="29" id="yz0-uU-0Lu"/>
                         </constraints>
                     </view>
@@ -210,7 +191,6 @@
                         <outlet property="distanceLabel" destination="MlI-OO-pMj" id="Wic-Wd-Tf8"/>
                         <outlet property="hereBtn" destination="xHl-Nn-rrf" id="R3P-eX-xVS"/>
                         <outlet property="myMapView" destination="gWx-Cw-ycI" id="9c4-Rg-COY"/>
-                        <outlet property="swedenBtn" destination="KJW-Ue-oJ1" id="tVy-eB-kx8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8F-G3-3lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -277,12 +257,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.jpg" width="513" height="385"/>
+        <image name="1.jpg" width="800" height="600"/>
         <image name="18.png" width="16" height="16"/>
         <image name="35.png" width="16" height="16"/>
         <image name="80.png" width="16" height="16"/>
         <image name="here2.png" width="50" height="50"/>
-        <image name="sweden1.jpg" width="50" height="32"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

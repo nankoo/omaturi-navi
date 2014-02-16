@@ -38,7 +38,7 @@
     labelTop.font = [UIFont boldSystemFontOfSize:20.0];
     labelTop.textColor = [UIColor whiteColor]; // 好きな文字色にする
     self.navigationItem.titleView = labelTop;
-    labelTop.text = NSLocalizedString(@"例文", @"");//好きな文字を入れる
+    labelTop.text = NSLocalizedString(@"omaturi navi", );//好きな文字を入れる
     [labelTop sizeToFit];
 
     
@@ -48,7 +48,7 @@
     testScrollView.delegate = self;
     testScrollView.frame = self.view.bounds;
     
-    testScrollView.contentSize = CGSizeMake(320, 600);
+    testScrollView.contentSize = CGSizeMake(320, 700);
     //testScrollView.backgroundColor = [UIColor whiteColor];
     testScrollView.scrollEnabled = YES;
     //[self.view addSubview:testScrollView];
@@ -66,7 +66,7 @@
 
     
     //textview
-    UITextView *tv = [[UITextView alloc]initWithFrame:CGRectMake(30, 300, 260, 250)];
+    UITextView *tv = [[UITextView alloc]initWithFrame:CGRectMake(30, 300, 260, 350)];
     //tv.frame = CGRectMake(30, 300, 260, 500);
     tv.editable = NO;
     //tv.backgroundColor = [UIColor redColor];

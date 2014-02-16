@@ -72,13 +72,13 @@
     __errorLabel.text = nil;
     __errorLabel.hidden = YES;
     
-    backView = [[UIView alloc] init];
-    backView.frame = CGRectMake(30, 30, 260, 40);
-    backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-    backView.layer.cornerRadius = 5;
-    backView.clipsToBounds = true;
-    [self.view addSubview:backView];
-    [backView addSubview: _distanceLabel];
+//    backView = [[UIView alloc] init];
+//    backView.frame = CGRectMake(30, 30, 260, 40);
+//    backView.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
+//    backView.layer.cornerRadius = 5;
+//    backView.clipsToBounds = true;
+//    [self.view addSubview:backView];
+////    [backView addSubview: _distanceLabel];
     
     
     _locationManager = [[CLLocationManager alloc] init];
@@ -86,32 +86,130 @@
 
     
     
-    ann = [[Annotation alloc]initWithLocation:CLLocationCoordinate2DMake(59.3332,18.0643)];
-    [myMapView addAnnotation:ann];
-    ann.title = @"sweden";
-    ann.locationType = @"sweden";
+//    ann = [[Annotation alloc]initWithLocation:CLLocationCoordinate2DMake(59.3332,18.0643)];
+//    [myMapView addAnnotation:ann];
+//    ann.title = @"sweden";
+//    ann.locationType = @"sweden";
+    
+    /*
+     お祭りのアノテーション
+     ・死者の日（メキシコシティ：）
+     ・ロケット花火祭り（キオス島：）
+     ・シヌルグ（セブ：２月）
+     ・チーズ転がし祭り（イングランド：）
+     ・トマティーナ（トマト投げ祭り）（スペイン：）
+     ・バーニングマン（アメリカ：）
+     ・水掛祭り（チェンマイ：）
+     ・リオのカーニバル（リオデジャネイロ：）
+     ・メガボンバー（メキシコ：）
+     ・牛追い祭り（スペイン：）
+     ・オレンジ投げ祭り（イタリア：）
+     ・スイカ祭り（オーストラリア：）
+     
+     
+     */
+    
+    // day of the die
+    Annotation* dd = [[Annotation alloc] init];
+    dd.coordinate = CLLocationCoordinate2DMake(14.103746, -87.20482);
+    dd.title = @"死者の日";
+    dd.subtitle = @"Nov,";
+    dd.locationType = @"35.655, 139.748";
+    
+    
+    // rocket fireworks
+    Annotation* rf = [[Annotation alloc] init];
+    rf.coordinate = CLLocationCoordinate2DMake(38.362864, 26.123557);
+    rf.title = @"ロケット花火祭り";
+    rf.subtitle = @"Apr,";
+    rf.locationType = @"35.710, 139.810";
+    
+    // sinulog
+    Annotation* sinulog = [[Annotation alloc] init];
+    sinulog.coordinate = CLLocationCoordinate2DMake(10.311579, 123.895935);
+    sinulog.title = @"シヌルグ";
+    sinulog.subtitle = @"Jan,";
+    sinulog.locationType = @"35.655, 139.748";
+    
+    // rolling cheez
+    Annotation* rc = [[Annotation alloc] init];
+    rc.coordinate = CLLocationCoordinate2DMake(51.864245, -2.238156);
+    rc.title = @"チーズ転がし祭り";
+    rc.subtitle = @"May,";
+    rc.locationType = @"35.655, 139.748";
+    
+    // tomato
+    Annotation* tomato = [[Annotation alloc] init];
+    tomato.coordinate = CLLocationCoordinate2DMake(39.424357, -0.786317);
+    tomato.title = @"トマト投げ祭り（トマティーナ）";
+    tomato.subtitle = @"Aug,";
+    tomato.locationType = @"35.655, 139.748";
+    
+    // burning man
+    Annotation* bm = [[Annotation alloc] init];
+    bm.coordinate = CLLocationCoordinate2DMake(40.949035, -118.887653);
+    bm.title = @"バーニングマン";
+    bm.subtitle = @"Aug,";
+    bm.locationType = @"35.655, 139.748";
+    
+    // water festival
+    Annotation* wf = [[Annotation alloc] init];
+    wf.coordinate = CLLocationCoordinate2DMake(18.787742, 98.993108);
+    wf.title = @"水かけ祭り（ソンクラーン）";
+    wf.subtitle = @"Apr,";
+    wf.locationType = @"35.655, 139.748";
+    
+    // rio carnival
+    Annotation* rio = [[Annotation alloc] init];
+    rio.coordinate = CLLocationCoordinate2DMake(-22.913395, -43.200710);
+    rio.title = @"リオのカーニバル";
+    rio.subtitle = @"Feb,";
+    rio.locationType = @"35.655, 139.748";
+    
+    // mega bomber
+    Annotation* mb = [[Annotation alloc] init];
+    mb.coordinate = CLLocationCoordinate2DMake(17.562415, -99.513955);
+    mb.title = @"メガボンバー";
+    mb.subtitle = @"Mar,";
+    mb.locationType = @"35.655, 139.748";
+    
+    // cow festival
+    Annotation* cf = [[Annotation alloc] init];
+    cf.coordinate = CLLocationCoordinate2DMake(42.811663, -1.648265);
+    cf.title = @"牛追い祭り（サンフェルミン）";
+    cf.subtitle = @"Jul,";
+    cf.locationType = @"35.655, 139.748";
+    
+    // iburea carnival
+    Annotation* ic = [[Annotation alloc] init];
+    ic.coordinate = CLLocationCoordinate2DMake(45.467276, 7.880059);
+    ic.title = @"オレンジ投げ祭り（イブレアカーニバル）";
+    ic.subtitle = @"Mar,";
+    ic.locationType = @"35.655, 139.748";
+    
+    // water melon festival
+    Annotation* wm = [[Annotation alloc] init];
+    wm.coordinate = CLLocationCoordinate2DMake(-26.739435, 150.625063);
+    wm.title = @"スイカ祭り";
+    wm.subtitle = @"Feb,";
+    wm.locationType = @"35.655, 139.748";
+    
+    // add annotations to map
+    [myMapView addAnnotations:@[dd, rf, sinulog, rc, tomato, bm, wf, rio, mb, cf,ic,wm]];
+    
     
     /*
     //指定した大きさまで拡大
     [myMapView setRegion:MKCoordinateRegionMake(ann.coordinate, MKCoordinateSpanMake(59.3332,18.0643))];
      */
-   [myMapView selectAnnotation:ann animated:YES];
+//   [myMapView selectAnnotation:ann animated:YES];
     
     
-    CLLocationCoordinate2D coors[4];
-    // 渋谷、原宿、代々木、新宿
-    coors[0] = CLLocationCoordinate2DMake(59.3332,18.0643);
-    coors[1] = CLLocationCoordinate2DMake(35.670168, 139.702687);
-    coors[2] = CLLocationCoordinate2DMake(35.683061, 139.702042);
-    coors[3] = CLLocationCoordinate2DMake(35.690921, 139.700258);
-    MKPolyline *line = [MKPolyline polylineWithCoordinates:coors
-                                                     count:4];
-    [myMapView addOverlay:line];
     
     //現在地を表示
      //myMapView.showsUserLocation = YES;
     // 地図の種類をハイブリッドにする
-    myMapView.mapType = MKMapTypeHybrid;
+    myMapView.mapType = MKMapTypeStandard;
 
 }
 
@@ -232,12 +330,12 @@
         
         //成功時表示するラベル
         backView.hidden = YES;
-        _distanceLabel.hidden = YES;
+//        _distanceLabel.hidden = YES;
     } else {
         __errorLabel.text = NSLocalizedString(@"Alert Location Service Disabled", nil);
         
         backView.hidden = YES;
-        _distanceLabel.hidden = YES;
+//        _distanceLabel.hidden = YES;
     }
     __errorLabel.hidden = NO;
     
@@ -289,21 +387,21 @@
     
     
     
-    ////////////////////////////
-    // スウェーデンの経緯・緯度を設定
-    double latA = 59.3332;
-    double lngA = 18.0643;
-    
-    // 経緯・緯度からCLLocationを作成
-    CLLocation *A = [[CLLocation alloc] initWithLatitude:latA longitude:lngA];
-    
-    // 距離計算
-    CLLocationDistance distance = [A distanceFromLocation:recentLocation];
-    [_distanceLabel setText: [NSString stringWithFormat:@"Distance to sweden %4.0f m.",distance]];
-   
-
-
-    ///////////////////////////
+//    ////////////////////////////
+//    // スウェーデンの経緯・緯度を設定
+//    double latA = 59.3332;
+//    double lngA = 18.0643;
+//    
+//    // 経緯・緯度からCLLocationを作成
+//    CLLocation *A = [[CLLocation alloc] initWithLatitude:latA longitude:lngA];
+//    
+//    // 距離計算
+//    CLLocationDistance distance = [A distanceFromLocation:recentLocation];
+//    [_distanceLabel setText: [NSString stringWithFormat:@"Distance to sweden %4.0f m.",distance]];
+//   
+//
+//
+//    ///////////////////////////
     
     
     
@@ -350,11 +448,11 @@
     
 }
 
-- (IBAction)swedenTap:(id)sender {
-    NSLog(@"b");
-    
-    [myMapView setCenterCoordinate:ann.coordinate animated:YES];
-}
+//- (IBAction)swedenTap:(id)sender {
+//    NSLog(@"b");
+//    
+//    [myMapView setCenterCoordinate:ann.coordinate animated:YES];
+//}
 
 
 

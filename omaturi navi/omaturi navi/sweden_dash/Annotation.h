@@ -19,4 +19,6 @@
 - (id)initWithLocation:(CLLocationCoordinate2D)coord;
 - (void)setCoordinate:(CLLocationCoordinate2D)newCoordinate;
 
+//-(void) showDetail: (id) sender;
+
 @end

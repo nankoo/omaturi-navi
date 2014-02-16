@@ -23,8 +23,7 @@
 @property (retain, nonatomic) IBOutlet MKMapView *myMapView;
 @property (weak, nonatomic) IBOutlet UIButton *hereBtn;
 - (IBAction)hereTap:(id)sender;
-@property (weak, nonatomic) IBOutlet UIButton *swedenBtn;
-- (IBAction)swedenTap:(id)sender;
+
 
 //@property (nonatomic, retain) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UILabel *_errorLabel;
