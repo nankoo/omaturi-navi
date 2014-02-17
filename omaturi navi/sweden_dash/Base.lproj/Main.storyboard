@@ -184,7 +184,7 @@
                             <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="29" id="yz0-uU-0Lu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="map" image="80.png" id="CP3-9v-ojd"/>
+                    <tabBarItem key="tabBarItem" title="map" image="map.png" id="CP3-9v-ojd"/>
                     <navigationItem key="navigationItem" id="66x-ta-qH1"/>
                     <connections>
                         <outlet property="_errorLabel" destination="Km4-PW-JBQ" id="HOz-Oy-Rfr"/>
@@ -221,7 +221,7 @@
         <scene sceneID="bCu-od-fyr">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9JB-HT-Ao7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="list" image="35.png" id="u1e-5L-l1D"/>
+                    <tabBarItem key="tabBarItem" title="list" image="table.png" id="u1e-5L-l1D"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NJi-xT-ZFD">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -240,7 +240,7 @@
         <scene sceneID="2fW-R7-D3x">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8rZ-qE-F5O" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="image" image="18.png" id="Z7h-1E-pvt"/>
+                    <tabBarItem key="tabBarItem" title="image" image="img.png" id="Z7h-1E-pvt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="b7D-92-FzI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -258,10 +258,10 @@
     </scenes>
     <resources>
         <image name="1.jpg" width="800" height="600"/>
-        <image name="18.png" width="16" height="16"/>
-        <image name="35.png" width="16" height="16"/>
-        <image name="80.png" width="16" height="16"/>
         <image name="here2.png" width="50" height="50"/>
+        <image name="img.png" width="16" height="16"/>
+        <image name="map.png" width="16" height="16"/>
+        <image name="table.png" width="16" height="16"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

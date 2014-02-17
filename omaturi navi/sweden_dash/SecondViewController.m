@@ -22,10 +22,10 @@
     self.collectionView.dataSource = self;
     
     
-    imgArray = @[@"1.jpg", @"2.jpg", @"11.jpeg", @"4.jpg", @"5.jpeg", @"6.jpg", @"7.jpg", @"8.jpg", @"9.jpg", @"10.jpg"];
+    imgArray = @[@"1.jpg", @"2.jpg", @"3.jpeg", @"4.jpg", @"5.jpeg", @"6.jpg", @"7.jpg", @"8.jpg", @"9.jpg", @"10.jpg", @"11.jpg", @"12.jpg"];
     UIImage *im1 = [UIImage imageNamed:@"1.jpg"];
     UIImage *im2 = [UIImage imageNamed:@"2.jpg"];
-    UIImage *im3 = [UIImage imageNamed:@"11.jpg"];
+    UIImage *im3 = [UIImage imageNamed:@"3.jpg"];
     UIImage *im4 = [UIImage imageNamed:@"4.jpg"];
     UIImage *im5 = [UIImage imageNamed:@"5.jpg"];
     UIImage *im6 = [UIImage imageNamed:@"6.jpg"];
@@ -33,7 +33,9 @@
     UIImage *im8 = [UIImage imageNamed:@"8.jpg"];
     UIImage *im9 = [UIImage imageNamed:@"9.jpg"];
     UIImage *im10 = [UIImage imageNamed:@"10.jpg"];
-    imgs = [NSArray arrayWithObjects:im1, im2, im3, im4, im5, im6, im7, im8, im9 ,im10 , nil];
+    UIImage *im11 = [UIImage imageNamed:@"11.jpg"];
+    UIImage *im12 = [UIImage imageNamed:@"12.jpg"];
+    imgs = [NSArray arrayWithObjects:im1, im2, im3, im4, im5, im6, im7, im8, im9,im10, im11, im12, nil];
     
     explain = @[@"【死者の日】\n\n”11月1〜2日”\n\n死者の日には家族や友人達が集い、故人への思いを馳せて語り合う。祝祭はカトリックにおける諸聖人の日である11月1日と翌日2日に行われる。地域によっては、10月31日の晩も前夜祭として祝われる。市街地はマリーゴールドの香りに包まれ、公園には露店が立ち並ぶ。11月1日は子供の魂が、2日は大人の魂が戻る日とされ、供え物がチョコレートなどのお菓子からメスカルなどの酒に変わっていく。日本のお盆に近い位置付けであるが、あくまで楽しく明るく祝うのが特徴である。死を恐怖するのではなく、逆にあざ笑うというモチーフとなっている。墓地にも派手な装飾が施され、夜間にはバンドによる演奏なども行われる。カボチャを飾り仮装をしてパーティを行うなど、ハロウィンとも共通する点が多くあり、実際にルーツは近似している部分がある。",
                 @"【ロケット花火祭り】\n\n”４月”\n\n世界的にも有名なギリシャ・ヒオス島（キオス島）のイースター（復活祭）行事「ロケット花火祭り」。2つの教会同士でロケット花火を打ち合うもので、その数一晩に65,000発以上です。",

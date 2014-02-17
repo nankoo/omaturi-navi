@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "30DA4436189FC2B400B48FEC"
-               BuildableName = "omaturi navi.app"
-               BlueprintName = "omaturi navi"
-               ReferencedContainer = "container:omaturi navi.xcodeproj">
+               BuildableName = "BG.app"
+               BlueprintName = "BG"
+               ReferencedContainer = "container:BG.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "30DA445A189FC2B400B48FEC"
-               BuildableName = "omaturi naviTests.xctest"
-               BlueprintName = "omaturi naviTests"
-               ReferencedContainer = "container:omaturi navi.xcodeproj">
+               BuildableName = "BGTests.xctest"
+               BlueprintName = "BGTests"
+               ReferencedContainer = "container:BG.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30DA4436189FC2B400B48FEC"
-            BuildableName = "omaturi navi.app"
-            BlueprintName = "omaturi navi"
-            ReferencedContainer = "container:omaturi navi.xcodeproj">
+            BuildableName = "BG.app"
+            BlueprintName = "BG"
+            ReferencedContainer = "container:BG.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30DA4436189FC2B400B48FEC"
-            BuildableName = "omaturi navi.app"
-            BlueprintName = "omaturi navi"
-            ReferencedContainer = "container:omaturi navi.xcodeproj">
+            BuildableName = "BG.app"
+            BlueprintName = "BG"
+            ReferencedContainer = "container:BG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "30DA4436189FC2B400B48FEC"
-            BuildableName = "omaturi navi.app"
-            BlueprintName = "omaturi navi"
-            ReferencedContainer = "container:omaturi navi.xcodeproj">
+            BuildableName = "BG.app"
+            BlueprintName = "BG"
+            ReferencedContainer = "container:BG.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
