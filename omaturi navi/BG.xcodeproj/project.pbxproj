@@ -35,10 +35,11 @@
 		3012AF7618B0DE8B0051CBB8 /* octberFes.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3012AF5A18B0DE8B0051CBB8 /* octberFes.jpg */; };
 		3012AF7718B0DE8B0051CBB8 /* omaturi navi-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3012AF5B18B0DE8B0051CBB8 /* omaturi navi-logo.png */; };
 		3012AF7818B0DE8B0051CBB8 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 3012AF5C18B0DE8B0051CBB8 /* table.png */; };
-		3049D7B018A0AFF000012D9A /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049D7AF18A0AFF000012D9A /* Annotation.m */; };
-		3049D7B318A0B04100012D9A /* CustomAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049D7B218A0B04100012D9A /* CustomAnnotationView.m */; };
 		3049D7C018A1D4EA00012D9A /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3049D7BF18A1D4EA00012D9A /* CollectionViewCell.m */; };
 		3049D7C218A213B800012D9A /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3049D7C118A213B800012D9A /* Social.framework */; };
+		3071B56B18BD46E7009E90AB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3071B56A18BD46E7009E90AB /* MapKit.framework */; };
+		3071B56E18BD499D009E90AB /* mapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B56D18BD499D009E90AB /* mapViewController.m */; };
+		3071B57118BD49CE009E90AB /* CustomAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3071B57018BD49CE009E90AB /* CustomAnnotation.m */; };
 		30DA443B189FC2B400B48FEC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DA443A189FC2B400B48FEC /* Foundation.framework */; };
 		30DA443D189FC2B400B48FEC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DA443C189FC2B400B48FEC /* CoreGraphics.framework */; };
 		30DA443F189FC2B400B48FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DA443E189FC2B400B48FEC /* UIKit.framework */; };
@@ -54,7 +55,6 @@
 		30DA445F189FC2B400B48FEC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DA443E189FC2B400B48FEC /* UIKit.framework */; };
 		30DA4467189FC2B400B48FEC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30DA4465189FC2B400B48FEC /* InfoPlist.strings */; };
 		30DA4469189FC2B400B48FEC /* sweden_dashTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4468189FC2B400B48FEC /* sweden_dashTests.m */; };
-		30DA4474189FC2D300B48FEC /* thirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4473189FC2D300B48FEC /* thirdViewController.m */; };
 		30DA4477189FC2ED00B48FEC /* contentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 30DA4476189FC2ED00B48FEC /* contentsView.m */; };
 		30DA4494189FDB3000B48FEC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30DA4493189FDB3000B48FEC /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
@@ -98,14 +98,15 @@
 		3012AF5A18B0DE8B0051CBB8 /* octberFes.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = octberFes.jpg; sourceTree = "<group>"; };
 		3012AF5B18B0DE8B0051CBB8 /* omaturi navi-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "omaturi navi-logo.png"; sourceTree = "<group>"; };
 		3012AF5C18B0DE8B0051CBB8 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
-		3049D7AE18A0AFF000012D9A /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
-		3049D7AF18A0AFF000012D9A /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
-		3049D7B118A0B04100012D9A /* CustomAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotationView.h; sourceTree = "<group>"; };
-		3049D7B218A0B04100012D9A /* CustomAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotationView.m; sourceTree = "<group>"; };
 		3049D7BE18A1D4EA00012D9A /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		3049D7BF18A1D4EA00012D9A /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		3049D7C118A213B800012D9A /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
-		30DA4437189FC2B400B48FEC /* omaturi navi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "omaturi navi.app"; path = BG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3071B56A18BD46E7009E90AB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3071B56C18BD499D009E90AB /* mapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mapViewController.h; sourceTree = "<group>"; };
+		3071B56D18BD499D009E90AB /* mapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mapViewController.m; sourceTree = "<group>"; };
+		3071B56F18BD49CD009E90AB /* CustomAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotation.h; sourceTree = "<group>"; };
+		3071B57018BD49CE009E90AB /* CustomAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotation.m; sourceTree = "<group>"; };
+		30DA4437189FC2B400B48FEC /* BG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30DA443A189FC2B400B48FEC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		30DA443C189FC2B400B48FEC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		30DA443E189FC2B400B48FEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -126,8 +127,6 @@
 		30DA4464189FC2B400B48FEC /* BGTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BGTests-Info.plist"; sourceTree = "<group>"; };
 		30DA4466189FC2B400B48FEC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		30DA4468189FC2B400B48FEC /* sweden_dashTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sweden_dashTests.m; sourceTree = "<group>"; };
-		30DA4472189FC2D300B48FEC /* thirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thirdViewController.h; sourceTree = "<group>"; };
-		30DA4473189FC2D300B48FEC /* thirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = thirdViewController.m; sourceTree = "<group>"; };
 		30DA4475189FC2ED00B48FEC /* contentsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = contentsView.h; sourceTree = "<group>"; };
 		30DA4476189FC2ED00B48FEC /* contentsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = contentsView.m; sourceTree = "<group>"; };
 		30DA4493189FDB3000B48FEC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -138,6 +137,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3071B56B18BD46E7009E90AB /* MapKit.framework in Frameworks */,
 				3049D7C218A213B800012D9A /* Social.framework in Frameworks */,
 				30DA4494189FDB3000B48FEC /* CoreLocation.framework in Frameworks */,
 				30DA443D189FC2B400B48FEC /* CoreGraphics.framework in Frameworks */,
@@ -207,7 +207,7 @@
 		30DA4438189FC2B400B48FEC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				30DA4437189FC2B400B48FEC /* omaturi navi.app */,
+				30DA4437189FC2B400B48FEC /* BG.app */,
 				30DA445B189FC2B400B48FEC /* BGTests.xctest */,
 			);
 			name = Products;
@@ -216,6 +216,7 @@
 		30DA4439189FC2B400B48FEC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3071B56A18BD46E7009E90AB /* MapKit.framework */,
 				3049D7C118A213B800012D9A /* Social.framework */,
 				30DA4493189FDB3000B48FEC /* CoreLocation.framework */,
 				30DA443A189FC2B400B48FEC /* Foundation.framework */,
@@ -240,12 +241,10 @@
 				30DA4453189FC2B400B48FEC /* SecondViewController.m */,
 				3049D7BE18A1D4EA00012D9A /* CollectionViewCell.h */,
 				3049D7BF18A1D4EA00012D9A /* CollectionViewCell.m */,
-				30DA4472189FC2D300B48FEC /* thirdViewController.h */,
-				30DA4473189FC2D300B48FEC /* thirdViewController.m */,
-				3049D7AE18A0AFF000012D9A /* Annotation.h */,
-				3049D7AF18A0AFF000012D9A /* Annotation.m */,
-				3049D7B118A0B04100012D9A /* CustomAnnotationView.h */,
-				3049D7B218A0B04100012D9A /* CustomAnnotationView.m */,
+				3071B56C18BD499D009E90AB /* mapViewController.h */,
+				3071B56D18BD499D009E90AB /* mapViewController.m */,
+				3071B56F18BD49CD009E90AB /* CustomAnnotation.h */,
+				3071B57018BD49CE009E90AB /* CustomAnnotation.m */,
 				30DA4455189FC2B400B48FEC /* Images.xcassets */,
 				3012AF4018B0DE8B0051CBB8 /* omaturi navi_img */,
 				30DA4441189FC2B400B48FEC /* Supporting Files */,
@@ -299,7 +298,7 @@
 			);
 			name = BG;
 			productName = sweden_dash;
-			productReference = 30DA4437189FC2B400B48FEC /* omaturi navi.app */;
+			productReference = 30DA4437189FC2B400B48FEC /* BG.app */;
 			productType = "com.apple.product-type.application";
 		};
 		30DA445A189FC2B400B48FEC /* BGTests */ = {
@@ -409,13 +408,12 @@
 			files = (
 				30DA4454189FC2B400B48FEC /* SecondViewController.m in Sources */,
 				30DA444B189FC2B400B48FEC /* AppDelegate.m in Sources */,
-				3049D7B318A0B04100012D9A /* CustomAnnotationView.m in Sources */,
 				3049D7C018A1D4EA00012D9A /* CollectionViewCell.m in Sources */,
+				3071B57118BD49CE009E90AB /* CustomAnnotation.m in Sources */,
 				30DA4477189FC2ED00B48FEC /* contentsView.m in Sources */,
-				3049D7B018A0AFF000012D9A /* Annotation.m in Sources */,
+				3071B56E18BD499D009E90AB /* mapViewController.m in Sources */,
 				30DA4451189FC2B400B48FEC /* FirstViewController.m in Sources */,
 				30DA4447189FC2B400B48FEC /* main.m in Sources */,
-				30DA4474189FC2D300B48FEC /* thirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

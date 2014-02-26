@@ -113,7 +113,6 @@
     viewController.swedenImg = [imgs objectAtIndex:indexPath.item];
   
     
-    
     //セレクトした後に解放
     //[collectionView deselectAtIndexPath:indexPath animated:YES];
     //下記コードを使用する事で、segue無しの接続ができる

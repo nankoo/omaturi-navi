@@ -126,10 +126,10 @@
             </objects>
             <point key="canvasLocation" x="-117" y="514"/>
         </scene>
-        <!--Third View Controller - map-->
+        <!--Map View Controller-->
         <scene sceneID="3mV-9x-XkK">
             <objects>
-                <viewController storyboardIdentifier="thirdViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HCK-BL-BdX" customClass="thirdViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HCK-BL-BdX" customClass="mapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="atF-AP-FLc"/>
                         <viewControllerLayoutGuide type="bottom" id="umc-WZ-KhB"/>
@@ -142,27 +142,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHl-Nn-rrf">
-                                <rect key="frame" x="15" y="452" width="40" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="8o6-bh-POa"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <state key="normal" image="here2.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="hereTap:" destination="HCK-BL-BdX" eventType="touchUpInside" id="m9B-KG-1oc"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Km4-PW-JBQ">
-                                <rect key="frame" x="49" y="151" width="223" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlI-OO-pMj">
                                 <rect key="frame" x="18" y="34" width="285" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -173,29 +152,20 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gWx-Cw-ycI" firstAttribute="centerX" secondItem="Km4-PW-JBQ" secondAttribute="centerX" id="3m6-nJ-TVv"/>
                             <constraint firstAttribute="trailing" secondItem="gWx-Cw-ycI" secondAttribute="trailing" id="4w7-4J-Rqc"/>
                             <constraint firstItem="gWx-Cw-ycI" firstAttribute="top" secondItem="tCa-YI-m4f" secondAttribute="top" id="5Pm-oR-xn6"/>
                             <constraint firstAttribute="bottom" secondItem="gWx-Cw-ycI" secondAttribute="bottom" id="7Is-kF-A54"/>
-                            <constraint firstAttribute="bottom" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="79" id="XuG-hX-LbC"/>
-                            <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="29" id="abw-UI-Cm9"/>
-                            <constraint firstItem="xHl-Nn-rrf" firstAttribute="leading" secondItem="tCa-YI-m4f" secondAttribute="leading" constant="15" id="hzX-qx-i2Q"/>
                             <constraint firstItem="gWx-Cw-ycI" firstAttribute="leading" secondItem="tCa-YI-m4f" secondAttribute="leading" id="vIc-Dm-gE3"/>
-                            <constraint firstItem="umc-WZ-KhB" firstAttribute="top" secondItem="xHl-Nn-rrf" secondAttribute="bottom" constant="29" id="yz0-uU-0Lu"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="map" image="map.png" id="CP3-9v-ojd"/>
                     <navigationItem key="navigationItem" id="66x-ta-qH1"/>
                     <connections>
-                        <outlet property="_errorLabel" destination="Km4-PW-JBQ" id="HOz-Oy-Rfr"/>
-                        <outlet property="distanceLabel" destination="MlI-OO-pMj" id="Wic-Wd-Tf8"/>
-                        <outlet property="hereBtn" destination="xHl-Nn-rrf" id="R3P-eX-xVS"/>
-                        <outlet property="myMapView" destination="gWx-Cw-ycI" id="9c4-Rg-COY"/>
+                        <outlet property="myMapView" destination="gWx-Cw-ycI" id="t55-NN-yws"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8F-G3-3lg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-117" y="1297"/>
+            <point key="canvasLocation" x="-111" y="1289"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
@@ -210,7 +180,7 @@
                     <connections>
                         <segue destination="9JB-HT-Ao7" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
                         <segue destination="8rZ-qE-F5O" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
-                        <segue destination="HCK-BL-BdX" kind="relationship" relationship="viewControllers" id="ZOh-MD-87O"/>
+                        <segue destination="eBf-2m-EpD" kind="relationship" relationship="viewControllers" id="5Mp-ae-gJd"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FNP-y4-bzi" sceneMemberID="firstResponder"/>
@@ -255,10 +225,28 @@
             </objects>
             <point key="canvasLocation" x="-643" y="514"/>
         </scene>
+        <!--Navigation Controller - map-->
+        <scene sceneID="nLY-CU-Bdg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eBf-2m-EpD" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="map" image="map.png" id="CP3-9v-ojd"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eYg-Tg-9wT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HCK-BL-BdX" kind="relationship" relationship="rootViewController" id="dIZ-Jc-7h5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tDj-7j-o7L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-637" y="1289"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1.jpg" width="800" height="600"/>
-        <image name="here2.png" width="50" height="50"/>
         <image name="img.png" width="16" height="16"/>
         <image name="map.png" width="16" height="16"/>
         <image name="table.png" width="16" height="16"/>

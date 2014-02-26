@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SecondViewController.h"
-#import "thirdViewController.h"
+#import "mapViewController.h"
 #import "contentsView.h"
 
 

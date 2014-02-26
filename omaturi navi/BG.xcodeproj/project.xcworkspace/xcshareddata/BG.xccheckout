@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A4205819-46CB-48F0-92E6-CA6F73226B55</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BG</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E77F6330-F238-43BE-9A03-89472C670BA0</key>
+		<string>https://github.com/nankoo/omaturi-navi.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>omaturi navi/BG.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E77F6330-F238-43BE-9A03-89472C670BA0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/nankoo/omaturi-navi.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E77F6330-F238-43BE-9A03-89472C670BA0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E77F6330-F238-43BE-9A03-89472C670BA0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>omaturi navi</string>
+		</dict>
+	</array>
+</dict>
+</plist>
