@@ -11,23 +11,28 @@
 #import <CoreLocation/CoreLocation.h>
 #import "contentsView.h"
 #import "SecondViewController.h"
+#import "SWRevealViewController.h"
 
 
 @interface mapViewController : UIViewController
 <MKMapViewDelegate ,CLLocationManagerDelegate >
 {
-    //MKMapView *myMapView;
     CLLocationManager *locationManager;
-    //__strong CLLocationManager *_locationManager;
     NSArray *imgArray;
     NSArray *imgs;
-    NSArray *explain;
     
-}
+    }
 @property (nonatomic, retain) CLLocationManager *locationManager;
 -(void) onResume;
 -(void) onPause;
 @property (weak, nonatomic) IBOutlet MKMapView *myMapView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
+
+
+-(void)setLocationCoodinate:(CLLocationCoordinate2D)coodinate;
+//コールアウトを閉じる
+-(void)closeAnnotation:(BOOL)animated;
+
 
 
 @end

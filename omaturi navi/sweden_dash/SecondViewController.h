@@ -15,10 +15,10 @@
 @interface SecondViewController : UIViewController
 <UICollectionViewDataSource,UICollectionViewDelegate>
 {
-    
     NSArray *imgArray;
     NSArray *imgs;
     NSArray *explain;
+    NSArray *name;
 }
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 

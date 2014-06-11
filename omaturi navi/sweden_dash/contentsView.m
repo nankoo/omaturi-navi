@@ -8,15 +8,11 @@
 
 #import "contentsView.h"
 
-@interface contentsView ()
 
-@end
+@implementation contentsView
 
-@implementation contentsView{
-    
-}
 @synthesize myStr; //アクセサメソッドについて要確認
-@synthesize swedenImg;
+@synthesize contents_img;
 
 
 
@@ -47,19 +43,15 @@
     UIScrollView *testScrollView = [[UIScrollView alloc] init];
     testScrollView.delegate = self;
     testScrollView.frame = self.view.bounds;
-    
     testScrollView.contentSize = CGSizeMake(320, 700);
-    //testScrollView.backgroundColor = [UIColor whiteColor];
-    testScrollView.scrollEnabled = YES;
-    //[self.view addSubview:testScrollView];
     
     
     //imageview
-    UIImageView *myimg = [[UIImageView alloc] initWithImage:swedenImg];
+    UIImageView *myimg = [[UIImageView alloc] initWithImage:contents_img];
     myimg.frame = CGRectMake(50, 100, 220, 150);
     //アスペクト比を崩さないように配置
     [myimg setContentMode:UIViewContentModeScaleAspectFit];
-    myimg.image = swedenImg;
+    myimg.image = contents_img;
     myimg.layer.cornerRadius = 5;
     myimg.clipsToBounds = true;
     [testScrollView addSubview:myimg];
@@ -67,25 +59,13 @@
     
     //textview
     UITextView *tv = [[UITextView alloc]initWithFrame:CGRectMake(30, 300, 260, 350)];
-    //tv.frame = CGRectMake(30, 300, 260, 500);
     tv.editable = NO;
-    //tv.backgroundColor = [UIColor redColor];
     tv.textColor = [UIColor blackColor];
     tv.text = myStr;
     [testScrollView addSubview:tv];
     
-//    
-//    CGRect frame2 = CGRectMake(0,300,200,100);
-//	// 幅180,高さ900のRectの中に表示したときのサイズを計算
-//	CGSize size2 = [myTextView.text sizeWithFont:myTextView.font
-//                               constrainedToSize:CGSizeMake(180, 900)];
-//	
-//	frame2.size.height = size2.height;
-//	myTextView.frame = frame2;
 
     [self.view addSubview:testScrollView];
-    
-    
     
     
     
